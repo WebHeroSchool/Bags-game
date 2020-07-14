@@ -2,11 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Bags-Game</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
   </head>
   <body>
-    <h1 class="title">Hello</h1>
+    <div class='preloader'>
+      <div id='loader'></div>
+    </div>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">
+          Выберите уровень сложности:
+        </h1>
+        <h3 class="subtitle">
+          Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.
+        </h3>
+      </header>
+      <div class="content-wrapper">
+        <main class="main">
+          <nav class="main-menu">
+            <button class="main-menu__item selected" id="simple">Простой</button>
+            <button class="main-menu__item" id="medium">Средний</button>
+            <button class="main-menu__item" id="hard">Сложный</button>
+          </nav>
+          <button class="main-button" id="startTheGame">Начать игру</button>
+        </main>
+        <div class="image">
+          <img class="image-card__botom" src="img/card-back.png">
+          <img class="image-card__top" src="img/card-back.png">
+        </div>
+      </div>
+    </div>
+    <div class="gameField">
+      <div class="cards"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
